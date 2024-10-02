@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mido Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mido Store</h1>
+        <div id="menu-icon" class="icon">☰</div> <!-- أيقونة القائمة -->
+        <div id="menu" class="menu-hidden">
+            <ul>
+                <li>روابطنا: <a href="https://www.facebook.com/profile.php?id=100063678444895" target="_blank">فيسبوك</a></li>
+                <li>الدعم: <a href="mailto:mohamedlbd10@gmail.com">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>منتجاتنا</h2>
+            <div class="product">
+                <h3>اسم المنتج 1</h3>
+                <p>وصف المنتج 1</p>
+                <p class="price">السعر: 1000 دج</p>
+                <button class="add-to-cart">أضف إلى السلة</button>
+            </div>
+            <div class="product">
+                <h3>اسم المنتج 2</h3>
+                <p>وصف المنتج 2</p>
+                <p class="price">السعر: 2000 دج</p>
+                <button class="add-to-cart">أضف إلى السلة</button>
+            </div>
+        </section>
+
+        <section id="order-summary">
+            <h2>ملخص الطلب</h2>
+            <div class="summary-container">
+                <ul id="selected-products"></ul>
+                <p id="total-price">المجموع: 0 دج</p>
+            </div>
+            <h3>معلومات الزبون</h3>
+            <label>الاسم: <input type="text" id="customer-name" class="input-field"></label>
+            <label>اللقب: <input type="text" id="customer-surname" class="input-field"></label>
+            <label>الهاتف: <input type="text" id="customer-phone" class="input-field"></label>
+            <label>الولاية:
+                <select id="customer-state" class="input-field">
+                    <option value="">اختر ولاية</option>
+                    <!-- جميع ولايات الجزائر -->
+                    <option value="أدرار">أدرار</option>
+                    <option value="الشلف">الشلف</option>
+                    <option value="الأغواط">الأغواط</option>
+                    <!-- (أضف باقي الولايات هنا) -->
+                </select>
+            </label>
+            <label>العنوان: <input type="text" id="customer-address" class="input-field"></label>
+            <button id="confirm-order">تأكيد الطلب</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
