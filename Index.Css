@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 10px; /* جعل الأيقونة أعلى */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #ccc;
+}
+
+.menu-hidden {
+    display: none;
+}
+
+.menu-visible {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+#order-summary {
+    margin-top: 20px;
+}
+
+.summary-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+#selected-products {
+    list-style: none;
+    padding: 0;
+}
+
+#selected-products li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.remove-product {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+.input-field {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 10px;
+}
